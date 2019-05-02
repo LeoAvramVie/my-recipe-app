@@ -11,11 +11,11 @@ export class RecipeListComponent implements OnInit {
     new Recipe(
       'A Test Recipe',
       'This is a simply test',
-      'https://commons.wikimedia.org/wiki/File:Recipe_logo.jpeg'),
+      'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
     new Recipe(
       'A 2nd Test Recipe',
       'This is a simply 2nd test',
-      'https://commons.wikimedia.org/wiki/File:Recipe_logo.jpeg'),
+      'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
   ];
 
   constructor() { }
