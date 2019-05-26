@@ -7,8 +7,6 @@ import index from '@angular/cli/lib/cli';
 @Injectable()
 export class RecipeService {
 
-  recipeSelected = new EventEmitter<Recipe>();
-
   private recipes: Recipe[] = [
     new Recipe(
       'Schitzel',
