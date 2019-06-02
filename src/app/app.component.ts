@@ -7,9 +7,6 @@ import {Recipe} from './recipes/recipe.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  selectedRecipe: Recipe;
-
   loadedFeature = 'recipe';
 
 
