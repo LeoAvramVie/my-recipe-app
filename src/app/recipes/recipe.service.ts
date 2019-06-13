@@ -24,7 +24,7 @@ export class RecipeService {
       [
         new Ingredient('Buns', 2),
         new Ingredient('Meat', 1)
-      ]),
+      ])
   ];
 
   constructor(private slService: ShoppingListService) {}
