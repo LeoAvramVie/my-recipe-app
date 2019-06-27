@@ -17,7 +17,7 @@ export class AuthService {
 
   }
 
-  singup(email: string, password: string) {
+  signup(email: string, password: string) {
     return this.http.post<AuthResponseData>(
       'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyC0VHC3fYx1zNH_7HffnV5U5THvj2IZYss',
       {
