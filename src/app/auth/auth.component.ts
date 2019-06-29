@@ -34,8 +34,9 @@ export class AuthComponent {
             console.log(resData);
             this.isLoading = false;
           },
-          error => {
-            this.error = 'An error ocurred! Heast check dich ab';
+          errorMessage => {
+            console.log(errorMessage);
+            this.error = errorMessage;
             this.isLoading = false;
           }
         );
