@@ -27,17 +27,17 @@ export class AuthService {
         password,
         returnSecureToken: true
       }
-    ).pipe(catchError(errorRes => {
-
+    ).pipe(
+      catchError(errorRes => {
       let errorMassage = 'An unknown error ocurred! ';
-      if (errorRes.error || !errorRes.error.error) {
+      if (!errorRes.error || !errorRes.error.error) {
         return throwError(errorMassage);
       }
       switch (errorRes.error.error.massage) {
         case 'EMAIL_EXISTS':
           errorMassage = 'This email exists already';
       }
-      return throwError(errorRes);
+      return throwError(errorMassage);
     }));
   }
 }
