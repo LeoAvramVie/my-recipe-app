@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {NgForm} from '@angular/forms';
 import {AuthResponseData, AuthService} from './auth.service';
-import {error} from 'selenium-webdriver';
 import {Observable} from 'rxjs';
 import {Router} from '@angular/router';
 
