@@ -39,7 +39,7 @@ import {PlaceholderDirective} from './shared/placeholder/placeholder.directive';
     AuthComponent,
     LoadingSpinnerComponent,
     AlertComponent,
-    PlaceholderDirective
+    PlaceholderDirective,
   ],
   imports: [
     BrowserModule,
@@ -58,6 +58,7 @@ import {PlaceholderDirective} from './shared/placeholder/placeholder.directive';
       multi: true
     }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AlertComponent]
 })
 export class AppModule { }
