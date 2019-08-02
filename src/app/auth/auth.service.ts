@@ -138,7 +138,6 @@ export class AuthService {
         break;
     }
     return throwError(errorMessage);
-
   }
 }
 
