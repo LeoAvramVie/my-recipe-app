@@ -23,11 +23,11 @@ import {RecipesModules} from './recipes/recipes.module';
     HeaderComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective,
     AuthComponent,
     LoadingSpinnerComponent,
     AlertComponent,
     PlaceholderDirective,
+
   ],
   imports: [
     BrowserModule,
@@ -48,6 +48,9 @@ import {RecipesModules} from './recipes/recipes.module';
     }
   ],
   bootstrap: [AppComponent],
+  exports: [
+    DropdownDirective
+  ],
   entryComponents: [AlertComponent]
 })
 export class AppModule { }
