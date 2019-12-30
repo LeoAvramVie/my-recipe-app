@@ -12,7 +12,6 @@ import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
 import {RecipesRoutingModule} from './recipes-routing.module';
 import {DropdownDirective} from '../shared/dropdown.directive';
-import {AppModule} from '../app.module';
 
 @NgModule({
   declarations: [
@@ -33,18 +32,10 @@ import {AppModule} from '../app.module';
     AppRoutingModule,
     HttpClientModule,
     RecipesRoutingModule,
-
   ],
   exports: [
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    RecipeStartComponent,
-    RecipeEditComponent,
     DropdownDirective
-
-  ]
+  ],
 })
 export class RecipesModules {}
 

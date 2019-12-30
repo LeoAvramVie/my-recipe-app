@@ -2,12 +2,9 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
-import {ShoppingListComponent} from './shopping-list/shopping-list.component';
-import {ShoppingEditComponent} from './shopping-list/shopping-edit/shopping-edit.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RecipeService} from './recipes/recipe.service';
 import {ShoppingListService} from './shopping-list/shopping-list.service';
-import {DropdownDirective} from './shared/dropdown.directive';
 import {AppRoutingModule} from './app-routing.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {AuthComponent} from './auth/auth.component';
@@ -16,18 +13,16 @@ import {AuthInterceptorService} from './auth/auth-interceptor.service';
 import {AlertComponent} from './shared/alert/alert.component';
 import {PlaceholderDirective} from './shared/placeholder/placeholder.directive';
 import {RecipesModules} from './recipes/recipes.module';
+import {ShoppingListModule} from './shopping-list/shopping-list.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent,
     AuthComponent,
     LoadingSpinnerComponent,
     AlertComponent,
     PlaceholderDirective,
-
   ],
   imports: [
     BrowserModule,
@@ -35,8 +30,8 @@ import {RecipesModules} from './recipes/recipes.module';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    RecipesModules
-
+    RecipesModules,
+    ShoppingListModule
   ],
   providers: [
     ShoppingListService,
@@ -48,9 +43,6 @@ import {RecipesModules} from './recipes/recipes.module';
     }
   ],
   bootstrap: [AppComponent],
-  exports: [
-    DropdownDirective
-  ],
   entryComponents: [AlertComponent]
 })
 export class AppModule { }
