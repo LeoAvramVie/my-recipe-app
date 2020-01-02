@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
 import {RecipesRoutingModule} from './recipes-routing.module';
 import {DropdownDirective} from '../shared/dropdown.directive';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,17 +22,18 @@ import {DropdownDirective} from '../shared/dropdown.directive';
     RecipeItemComponent,
     RecipeStartComponent,
     RecipeEditComponent,
-    DropdownDirective
+
 
   ],
   imports: [
     RouterModule,
-    CommonModule,
+
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     RecipesRoutingModule,
+    SharedModule
   ],
   exports: [
     DropdownDirective
