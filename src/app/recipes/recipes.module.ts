@@ -6,10 +6,7 @@ import {RecipeItemComponent} from './recipe-list/recipe-item/recipe-item.compone
 import {RecipeStartComponent} from './recipe-start/recipe-start.component';
 import {RecipeEditComponent} from './recipe-edit/recipe-edit.component';
 import {RouterModule} from '@angular/router';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {AppRoutingModule} from '../app-routing.module';
-import {HttpClientModule} from '@angular/common/http';
-import {CommonModule} from '@angular/common';
+import {ReactiveFormsModule} from '@angular/forms';
 import {RecipesRoutingModule} from './recipes-routing.module';
 import {DropdownDirective} from '../shared/dropdown.directive';
 import {SharedModule} from '../shared/shared.module';
@@ -27,11 +24,7 @@ import {SharedModule} from '../shared/shared.module';
   ],
   imports: [
     RouterModule,
-
-    FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
-    HttpClientModule,
     RecipesRoutingModule,
     SharedModule
   ],
@@ -39,5 +32,5 @@ import {SharedModule} from '../shared/shared.module';
     DropdownDirective
   ],
 })
-export class RecipesModules {}
+export class RecipesModule {}
 
