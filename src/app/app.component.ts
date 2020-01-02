@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Recipe} from './recipes/recipe.model';
 import {AuthService} from './auth/auth.service';
 
 @Component({
@@ -17,4 +16,4 @@ export class AppComponent implements OnInit {
 
 
 }
-//test
+
