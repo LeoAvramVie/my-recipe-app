@@ -1,0 +1,3 @@
+describe('recipe-detail', () => {
+  beforeEach()
+});
