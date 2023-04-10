@@ -1,4 +1,4 @@
-# Build a Real App with Angular, Material Design, NgRx, and Firebase
+App with Angular, Material Design, NgRx, and Firebase
 
 
 .A brief refresher on Angular (for those who need it)
